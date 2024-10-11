@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculatorApp.MainPage">
+
+    <StackLayout Padding="20">
+
+        <!-- Titel -->
+        <Label Text="Rekenmachine" FontSize="24" HorizontalOptions="Center" />
+
+        <!-- Invoer velden -->
+        <Entry x:Name="Input1" Placeholder="Voer het eerste getal in" Keyboard="Numeric" />
+        <Entry x:Name="Input2" Placeholder="Voer het tweede getal in" Keyboard="Numeric" />
+
+        <!-- Grid voor de knoppen -->
+        <Grid ColumnSpacing="10" RowSpacing="10" Margin="0,20,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Knoppen voor berekeningen -->
+            <Button x:Name="CalculateSum" Text=" + " Grid.Row="0" Grid.Column="0" Clicked="OnCalculate_Clicked" />
+            <Button x:Name="CalculateDifference" Text=" - " Grid.Row="0" Grid.Column="1" Clicked="OnCalculate_Clicked" />
+            <Button x:Name="CalculateProduct" Text=" * " Grid.Row="1" Grid.Column="0" Clicked="OnCalculate_Clicked" />
+            <Button x:Name="CalculateQuotient" Text=" / " Grid.Row="1" Grid.Column="1" Clicked="OnCalculate_Clicked" />
+            <Button x:Name="CalculateReminder" Text=" % " Grid.Row="2" Grid.Column="0" Clicked="OnCalculate_Clicked" />
+            <Button x:Name="CalculateResults" Text="Calculate" Grid.Row="3" Grid.ColumnSpan="2" Grid.Column="0" Clicked="OnCalculateResults_Clicked" />
+
+        </Grid>
+
+        <!-- Label voor de uitkomst -->
+        <Label x:Name="ResultLabel" Text="" FontSize="18" HorizontalOptions="Center" />
+
+    </StackLayout>
+</ContentPage>
