@@ -9,7 +9,7 @@ namespace CalculatorApp
     public static class Calculator
     {
         /// <summary>
-        /// Calculates the specified number1.
+        /// Make calculation based on the operation
         /// </summary>
         /// <param name="number1">The number1.</param>
         /// <param name="number2">The number2.</param>
@@ -40,8 +40,9 @@ namespace CalculatorApp
             }
         }
 
+
         /// <summary>
-        /// Calculates the specified number1.
+        /// Make calculations on two numbers
         /// </summary>
         /// <param name="number1">The number1.</param>
         /// <param name="number2">The number2.</param>
@@ -61,7 +62,7 @@ namespace CalculatorApp
         }
 
         /// <summary>
-        /// Calculates the specified number1.
+        /// Make calculations on two numbers
         /// </summary>
         /// <param name="number1">The number1.</param>
         /// <param name="number2">The number2.</param>
